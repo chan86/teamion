@@ -55,6 +55,8 @@ body {-webkit-text-size-adjust:none; font-size: 12px; font-weight: 400; font-fam
 .img-h40 {height: 40%;}
 .img-h20 {height: 20%;}
 
+.video {width: 100%; height: 100%; border: 0px;}
+
 .pointer {cursor: pointer;}
 
 a.no-decoration { text-decoration: none; color: #000;}

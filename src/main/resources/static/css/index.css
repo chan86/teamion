@@ -30,21 +30,22 @@ body {margin: 0; /*background-color: #F5C1C3;*/ background: linear-gradient(#F5C
 	color: #FFF;
 	padding: 20px 0;
 }
-.footer> .inner-wrap {
+.footer>.inner-wrap {
 	width: 80%;
 }
-.footer> .inner-wrap .inner {
-	width: 40%;
+.footer>.inner-wrap .inner {
+	width: 20%;
 	display: inline-flex;
 	margin: 5px 0;
+    white-space: nowrap;
 }
-.footer> .inner-wrap .inner span{
+.footer>.inner-wrap .inner span{
 	margin-right: 5px; 
 }
 
 .main-wrap {
 	/*border: 1px solid red;*/
-    margin-top: 20%;
+    margin-top: 100px;
 }
 .container-wrap {
 	width: 80%;	

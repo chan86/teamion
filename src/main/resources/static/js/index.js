@@ -27,11 +27,28 @@ document.addEventListener('DOMContentLoaded', function() {
 		    color: 'red',
 		    clickable : true
 		}, 
-		threshold:20 // Threshold value in px. If "touch distance" will be lower than this value then swiper will not move
+		threshold:20, // Threshold value in px. If "touch distance" will be lower than this value then swiper will not move
+		on: {
+		    slideChange: function (e) {
+		    	videoChange(e);
+		    }
+		}
 	});	
 });
 
 const moveScroll = function(targetId) {
 	let targetTop = document.querySelector(`#${targetId}`).offsetTop;
 	window.scrollTo({top:targetTop - (_headerHeight * 1.2), behavior:'smooth'});
+}
+
+const videoChange = function(e) {
+	// 변경 감지 후 active 사라지기 때문에 기존 active 영상을 mute or stop 처리
+	let a = document.querySelector('.swiper-slide-active .video');
+	if(a && a.tagName == 'VIDEO') {
+		a.muted = false; // 소리 있는 영상으로 동작여부 확인필요
+	}
+	if(a && a.tagName == 'IFRAME') {
+		// youtube 설정처리
+	}
+	
 }
