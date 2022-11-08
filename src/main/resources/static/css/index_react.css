@@ -65,9 +65,9 @@
 	}
 
 	.swiper-container.movie .swiper-slide {
-		display: flex;
+		/*display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 80% !important;
+		width: 80% !important;*/
 	}
 }
