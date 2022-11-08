@@ -46,3 +46,28 @@
         flex-direction: column;
 	}
 }
+
+
+
+@media screen and (max-height: 400px) {
+	.header {
+		height: 40px;
+		display: flex;
+		justify-content: center;
+	    align-items: center;
+		font-size: 12px;
+	}
+	.header.on span {
+		font-size: 12px;
+	}
+	.header.on span.title {
+		font-size: 20px;
+	}
+
+	.swiper-container.movie .swiper-slide {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 80% !important;
+	}
+}
