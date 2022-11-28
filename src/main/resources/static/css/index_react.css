@@ -1,0 +1,71 @@
+/* tablet */
+@media screen and (max-width:1023px) {
+	/* 헤더 */
+	.header .menu
+	, .header .user-menu {
+		display: none;
+	}
+	.header .img.search
+	, .header .img.h-menu {
+		display: block;
+	}
+	.header > div.top-area {
+		width: 100%;
+	}
+	
+	/* 설명 1 - 슬라이더 이미지 소개 */
+	.content.info1 .inner .swiper-slide .img {
+		height: 30vh;
+	}
+	.content.info1 .inner .txt {
+		font-size: 1.2em;
+	}
+	
+	/* 설명 2 - 텍스트 소개*/
+	.content.info2 .inner .left .txt.title {
+		font-size: 1.5em;
+	}
+	.content.info2 .inner .left .txt.content {
+		font-size: 1.2em;
+	}
+	.content.info2 .inner {
+		flex-direction: column;
+	}
+	.content.info2 .inner .left 
+	, .content.info2 .inner .right {
+		width: 100%;	
+	}
+	
+}
+
+
+
+/* mobile */
+@media screen and (max-width:767px) {
+}
+
+
+
+/* mobile */
+@media screen and (max-width:600px) {
+}
+
+
+
+@media screen and (max-width:480px) {
+}
+
+
+
+@media screen and (max-width:400px) {
+}
+
+
+
+@media screen and (max-width:300px) {
+}
+
+
+
+@media screen and (max-height: 400px) {
+}

@@ -1,0 +1,46 @@
+/* tablet */
+@media screen and (max-width:1023px) {
+	.header .menu
+	, .header .user-menu {
+		display: none;
+	}
+	.header .search
+	, .header .h-menu {
+		display: block;
+	}
+	.header > div.top-area {
+		width: 100%;
+	}
+}
+
+
+
+/* mobile */
+@media screen and (max-width:767px) {
+}
+
+
+
+/* mobile */
+@media screen and (max-width:600px) {
+}
+
+
+
+@media screen and (max-width:480px) {
+}
+
+
+
+@media screen and (max-width:400px) {
+}
+
+
+
+@media screen and (max-width:300px) {
+}
+
+
+
+@media screen and (max-height: 400px) {
+}

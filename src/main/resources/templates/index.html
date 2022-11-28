@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	
+	<title>Dance FOR U</title>
+	<link rel="stylesheet" type="text/css" href="/css/common.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/css/index.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/css/index_react.css" media="all">
+	<link rel="stylesheet" href="/css/font.css">
+	<link rel="stylesheet" href="/external/swiper-5.3.0/package/css/swiper.min.css">
+</head>
+
+<body>
+	<!-- header -->
+	<div class="header flex flex-between flex-middle">
+		<div class="top-area flex flex-between flex-middle">
+			<img src="/img/ico_hamburger_menu.png" class="img h-menu pointer" alt="메뉴이미지">
+			<span class="txt title flex flex-center txt-s30 txt-w600">TeamIon</span>
+			<img src="/img/ico_search.png" class="img search pointer" alt="검색이미지">
+		</div>
+		<div class="menu flex txt-s15 txt-center txt-gray">
+			<span class="sub-title pointer" onclick="moveScroll('price')">파트너</span>
+			<span class="sub-title pointer" onclick="moveScroll('inquiry')">상담신청</span>
+		</div>
+		
+		<div class="user-menu">
+			<span>login</span>
+			<span>join</span>
+		</div>
+	</div>
+	
+	<!-- main -->
+	<div class="main-wrap flex flex-center flex-middle">
+		<div class="container-wrap">
+			<div class="container">
+				<div class="content-wrap">
+					<!-- info1 -->
+					<div class="content info1">
+						<div class="inner-wrap">
+							<div class="inner flex flex-center">
+								<div class="swiper-container info1"> 
+									<div class="swiper-wrapper"> 
+										<div class="swiper-slide">
+											<img src="https://cdn.imweb.me/thumbnail/20221126/eda50083e4e4f.jpg" class="img">
+											<div class="over flex flex-column flex-around flex-middle h30">
+												<div class="flex flex-column txt txt-white txt-s25">
+													<span class="">가장 특별한 날, 오직 두 사람을 위한 무대를 선물합니다.</span>
+												</div>
+												<button type="button" class="btn txt txt-s20 txt-w600 txt-white">SEE MORE</button>	
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<img src="https://cdn.imweb.me/thumbnail/20221126/3a61b9c974c78.jpg" class="img">
+											<div class="over flex flex-column flex-around flex-middle h70">
+												<div class="flex flex-column flex-around flex-middle txt txt-white txt-s25 h70">
+													<span class="">호흡, 발성, 음정이 불안정하신가요?</span>
+													<span class="">n년차 전문 보컬트레이너와 상담하세요.</span>
+													<span class="">음치, 박치 탈출 시켜드립니다.</span>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<img src="https://cdn.imweb.me/thumbnail/20221126/5517ba9bb3367.jpg" class="img">
+											<div class="over flex flex-column flex-around flex-middle h70">
+												<div class="flex flex-column flex-around flex-middle txt txt-white txt-s25 h70">
+													<span class="">결혼식에 축하무대를 꾸며줄 사람을 찾고 계신가요?</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- info2 -->
+					<div class="content info2 flex flex-center">
+						<div class="inner-wrap w90">
+							<div class="inner flex">
+								<div class="left w70">
+									<div class="flex flex-column txt txt-s20 title">
+										<span class="">대한민국 최초</span>
+										<span class="txt-w600">프리랜서 아티스트 재능 플랫폼</span>
+									</div>
+									<div class="flex flex-column txt txt-s15 txt-word-break content">
+										<span>혹시 아티스트의 재능이 필요한데 마음에 드는 아티스트를 찾기 어려우셨나요?</span>
+										<span>저희 티미온은 163명의 아티스트가 파트너로 등록되어 있습니다.</span>
+										<span>축하무대, 개인레슨, 작사, 작곡 등 아티스트의 재능이 필요하다면 언제 어디서든 24시간 티미온 파트너와 상담 가능합니다.</span>
+									</div>
+								</div>
+								<div class="right flex flex-center flex-middle w30">
+									<button type="button" class="inquiry flex flex-middle btn btn-round btn-white-gray">
+										<img src="/img/ico_telephone_receiver.png" class="img search" alt="검색이미지">
+										<span>파트너와 빠른 상담 예약</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- inquiry -->
+					<div class="content inquiry" id="inquiry">
+						<div class="inner-wrap">
+							<div class="inner sub-title flex flex-center">
+								<span class="txt-s10 txt-w500">- 문의 안내 -</span>
+							</div>
+							<div class="inner flex flex-center">
+								<form>
+									<div class="info flex flex-between">
+										<span class="info-key">E-mail</span>
+										<input type="text">
+									</div>
+									<div class="info flex flex-between">
+										<span class="info-key">성함</span>
+										<input type="text">
+									</div>
+									<div class="info flex flex-between">
+										<span class="info-key">연락처</span>
+										<input type="text">
+									</div>
+									<div class="info flex flex-between">
+										<span class="info-key">예식장 주소</span>
+										<input type="text">
+									</div>
+									<div class="info flex flex-between">
+										<span class="info-key">신청 옵션</span>
+										<input type="text">
+									</div>
+									<div class="info flex flex-between">
+										<span class="info-key">요청사항</span>
+										<input type="text">
+									</div>
+									<div class="txt-center">
+										<button type="submit" class="btn btn-white submit txt-10 txt-w600">문의하기</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer -->
+	<div class="footer flex flex-column flex-middle">
+		<div class="inner-wrap flex flex-around">
+			<span class="inner">
+				<span class="txt-w600">문의상담</span>
+				<span>010-0000-0000</span>
+			</span>
+			<span class="inner">
+				<span class="txt-w600">카톡상담</span>
+				<span>djfakjow</span>
+			</span>
+		</div>
+		<div class="inner-wrap flex flex-around">
+			<a href="#" class="inner no-decoration flex flex-middle">
+				<span><i class="fa-brands fa-instagram txt-white"></i></span>
+				<span class="txt-white">asadfa_Dd</span>
+			</a>
+			<a href="#" class="inner no-decoration flex flex-middle">
+				<span><i class="fa-brands fa-youtube txt-white"></i></span>
+				<span class="txt-white">댄스포유</span>
+			</a>
+		</div>
+	</div>
+	
+	<script src="/js/index.js"></script>
+	<script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
+	<script src="/external/swiper-5.3.0/package/js/swiper.min.js"></script>
+</body>
+</html>
